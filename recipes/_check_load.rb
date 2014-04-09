@@ -20,7 +20,7 @@
 # Use LWRP to define check_load
 nrpe_check "check_load" do
   command "#{node['nrpe']['plugin_dir']}/check_load"
-  warning_condition "5,10,5"
+  warning_condition "15,10,5"
   critical_condition "30,20,10"
   action :add
 end
